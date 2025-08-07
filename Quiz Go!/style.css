@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(244, 237, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container {
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 10px 30px rgb(3, 3, 3);
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+.screen {
+  display: none;
+  text-align: center;
+}
+.screen.active {
+  display: block;
+}
+#start-screen h1 {
+  color: rgb(147, 98, 7);
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+#start-screen p {
+  color: rgb(104, 98, 98);
+  margin-bottom: 35px;
+  font-size: 1.1rem;
+}
+.quiz-header {
+  margin-bottom: 2rem;
+}
+#question-text {
+  color: rgba(13, 8, 8, 0.7);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.quiz-info {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(176, 168, 168);
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+#answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.answer-btn {
+  background-color: rgb(212, 231, 234);
+  color: rgb(32, 30, 30);
+  border: 2px solid rgb(189, 209, 197);
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+.answer-btn:hover {
+  background-color: rgb(189, 209, 197);
+  border-color: rgb(245, 216, 178);
+}
+.answer-btn.correct {
+  background-color: rgb(232, 228, 224);
+  border-color: rgb(146, 209, 146);
+  color: rgb(6, 150, 6);
+}
+.answer-btn.incorrect {
+  background-color: rgb(232, 228, 224);
+  border-color: rgb(245, 95, 95);
+  color: rgb(112, 0, 0);
+}
+.progress-bar {
+  height: 10px;
+  background-color: rgb(228, 188, 135);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+#progress {
+  height: 100%;
+  background-color: rgb(236, 87, 87);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+#result-screen h1 {
+  color: rgb(222, 87, 87);
+  margin-bottom: 30px;
+}
+.result-info {
+  background-color: rgb(217, 226, 234);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.result-info p {
+  font-size: 1.2rem;
+  color: rgb(31, 29, 29);
+  margin-bottom: 1rem;
+}
+#result-message {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(211, 68, 68);
+}
+button {
+  background-color: rgb(211, 68, 68);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: rgb(209, 44, 44);
+}
