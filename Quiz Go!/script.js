@@ -63,7 +63,7 @@ const quizQuestions = [
     question: "What do you call someone who talks to themselves, answers, and argues too?",
     answers: [
       { text: "A philosopher", correct: false },
-      { text: "A programmer", correct: false },
+      { text: "A programmer", correct: true },
       { text: "A genius", correct: false },
       { text: "A mirror fan", correct: false },
     ],
@@ -165,3 +165,4 @@ function restartQuiz() {
   resultScreen.classList.remove("active");
   startScreen.classList.add("active");
 }
+
