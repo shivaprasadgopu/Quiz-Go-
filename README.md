@@ -14,7 +14,7 @@ QuizGo is a simple and interactive quiz web application built with HTML, CSS, an
 
 - HTML
 - CSS
-- JavaScript (Vanilla)
+- JavaScript
 
 ## How to Run
 
